@@ -1,0 +1,47 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "items",
+      "path": "items.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "latitude",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "time",
+            "type": "datetime",
+            "format": "default",
+            "title": "Timestamp"
+          },
+          {
+            "name": "tags",
+            "type": "string",
+            "format": "default",
+            "title": "Tags",
+            "description": "Symbol-separated list of tags assigned to the detected item"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "litterati",
+  "title": "Sample user data from Litterati",
+  "homepage": "https://litterati.org",
+  "version": "0.1.0",
+  "contributors": [
+    {
+      "title": "Jeff Kirschner, Ludovico Bianchi",
+      "role": "author"
+    }
+  ]
+}
