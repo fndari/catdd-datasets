@@ -1,0 +1,65 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "data",
+      "path": "data.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "destination_facility",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "disposal",
+            "type": "number",
+            "format": "default",
+            "title": "Disposal amount (in tons)"
+          },
+          {
+            "name": "report_year",
+            "type": "year",
+            "format": "default",
+            "title": "Report year"
+          },
+          {
+            "name": "report_quarter",
+            "type": "integer",
+            "format": "default",
+            "description": "Quarter (1-4)"
+          },
+          {
+            "name": "total_adc",
+            "type": "number",
+            "format": "default",
+            "title": "Amount (in tons) TODO get abbreviations"
+          },
+          {
+            "name": "county_id",
+            "type": "integer",
+            "format": "default",
+            "title": "County ID",
+            "description": "Note: progressive (alphabetical) County ID. Ranges 1-58.\n\nIDs 2, 29, 38, 51 could not be processed"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "trash",
+    "trash-disposal"
+  ],
+  "contributors": [
+    {
+      "title": "CalRecycle, Ludovico Bianchi",
+      "role": "author"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "disposal-countywide-report",
+  "homepage": "https://www2.calrecycle.ca.gov/LGCentral/DisposalReporting/Destination/CountywideSummary",
+  "title": "County-wide report for trash disposal",
+  "description": "Aggregated from the CalRecycle county-wide report for trash disposal for the years 1995-2017."
+}
